@@ -1,0 +1,24 @@
+{
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "inventory": "node src/fetch-and-normalize.ts",
+    "inventory:normalize": "node src/fetch-and-normalize.ts --normalize-existing",
+    "inventory:self-test": "node src/fetch-and-normalize.ts --self-test",
+    "graph:candidates": "node src/candidates.ts",
+    "graph:build": "node src/build-rule-graph.ts",
+    "graph:infer": "node src/infer-dependencies.ts",
+    "graph:render": "node src/render-graph.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.2.87",
+    "@composio/core": "^0.8.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.10",
+    "@types/bun": "^1.3.11",
+    "playwright": "^1.59.1",
+    "typescript": "^6.0.3"
+  }
+}

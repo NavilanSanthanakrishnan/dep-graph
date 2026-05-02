@@ -1,0 +1,12 @@
+[
+  {
+    "from": "GITHUB_LIST_REPO_INVITATIONS_FOR_AUTH_USER",
+    "to": "GITHUB_ACCEPT_REPOSITORY_INVITATION",
+    "satisfies": [
+      "invitation_id"
+    ],
+    "confidence": 0.95,
+    "reason": "Lists all pending repository invitations for the authenticated user, directly providing the invitation_id needed to accept a specific invitation.",
+    "source": "llm"
+  }
+]

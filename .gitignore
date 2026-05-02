@@ -1,0 +1,6 @@
+.env
+.env.*
+node_modules/
+agent-sessions/
+*.log
+.DS_Store
