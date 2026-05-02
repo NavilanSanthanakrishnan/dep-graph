@@ -2,6 +2,18 @@
 
 A dependency-graph pipeline for Composio's `github` and `googlesuper` toolkits. It maps which tools can act as precursor actions for other tools by identifying the IDs, references, and contextual inputs that target tools need before execution.
 
+## Tech Stack
+
+- TypeScript / Node.js for the graph pipeline.
+- Composio SDK for tool extraction.
+- Zod for structured validation.
+- OpenRouter + StepFun for optional LLM edge adjudication.
+- Three.js + 3d-force-graph for the Obsidian-style 3D explorer.
+- Playwright for visual QA screenshots.
+- Inline Python in `upload.sh` for safe session-token redaction.
+
+See [TECHNICAL_OVERVIEW.md](TECHNICAL_OVERVIEW.md) for the full implementation breakdown.
+
 ## What It Does
 
 - Fetches raw Composio tools for GitHub and Google Super.
