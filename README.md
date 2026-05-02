@@ -9,7 +9,7 @@ A dependency-graph pipeline for Composio's `github` and `googlesuper` toolkits. 
 - Infers dependency edges between tools using resource-aware matching rules.
 - Supports optional OpenRouter/LLM adjudication for ambiguous edge selection.
 - Produces a final graph with confidence-scored edges and plain-English reasons.
-- Renders an Obsidian-style 3D graph explorer with search, filtering, inspection, and an explanation tab.
+- Renders an 3D graph explorer with search, filtering, inspection, and an explanation tab.
 
 ## Final Output
 
